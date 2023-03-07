@@ -1,0 +1,32 @@
+{% extends "master.html" %}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
+{% block content %}
+<div class="container">
+  <div>
+    <h1>Welcome to RASMINDER!</h1><br>
+  </div>
+  <div>
+    <table class="table">
+      <tr>
+        <th>Open Tasks</th>
+        <th>Due Date</th>
+        <th></th>
+      </tr>
+      {% for x in alltasks %}
+      <tr>
+
+      </tr>
+        <td>{{x.taskname}}</td>
+        <td>{{x.duedate}}</td>
+        <td><a href="{% url 'deleteTask' id=x.id %}">
+          {% bootstrap_button "Delete" button_type="submit" button_class="btn-outline-danger" %}
+        </a></td>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+{% endblock %}

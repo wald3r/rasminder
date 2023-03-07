@@ -1,0 +1,24 @@
+.container {
+    font-family: verdana;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.table {
+    text-align: center;
+    vertical-align: middle;
+    width:70%;
+    margin-left:15%;
+    margin-right:15%;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}

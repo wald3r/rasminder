@@ -1,0 +1,19 @@
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'master.css' %}?{% now 'U' %}">
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RASMINDER!</title>
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
